@@ -11,5 +11,7 @@ package dip.lab2.student.solution1;
  * @author James
  */
 public class PaidService {
-    
+    public double getCompenstationForService(TipCalculator tc){
+        return tc.getTipAmount();
+    }
 }
