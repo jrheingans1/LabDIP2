@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package dip.lab1.student.solution1;
 
 /**
@@ -11,6 +10,6 @@ package dip.lab1.student.solution1;
  * @author James
  */
 public interface Employee {
-    
+
     public abstract double getAnnualWages();
 }

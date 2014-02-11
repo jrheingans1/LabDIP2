@@ -20,25 +20,24 @@ public class HourlyEmployee implements Employee {
     }
 
     @Override
-    public double getAnnualWages(){
+    public final double getAnnualWages() {
         return hourlyRate * totalHrsForYear;
     }
-    
-    public double getHourlyRate() {
+
+    public final double getHourlyRate() {
         return hourlyRate;
     }
 
-    public void setHourlyRate(double hourlyRate) {
+    public final void setHourlyRate(double hourlyRate) {
         this.hourlyRate = hourlyRate;
     }
 
-    public double getTotalHrsForYear() {
+    public final double getTotalHrsForYear() {
         return totalHrsForYear;
     }
 
-    public void setTotalHrsForYear(double totalHrsForYear) {
+    public final void setTotalHrsForYear(double totalHrsForYear) {
         this.totalHrsForYear = totalHrsForYear;
     }
-    
-    
+
 }

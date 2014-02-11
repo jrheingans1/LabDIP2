@@ -2,12 +2,13 @@ package dip.lab1;
 
 /**
  * The concrete super class of all employee types. What's wrong with this class?
- * Find and fix all encapsulation, DIP and best practice problems learned
- * so far.
+ * Find and fix all encapsulation, DIP and best practice problems learned so
+ * far.
  *
  * @author your name goes here
  */
 public class Employee {
+
     // You gotta question if these are appropriate for ALL employees?
     private double hourlyRate;
     private double totalHrsForYear;
@@ -15,19 +16,19 @@ public class Employee {
     private double annualBonus;
 
     /**
-     * Returns annual wages for hourly workers. Is this polymorphic?
-     * Could it be? Does it belong here?
+     * Returns annual wages for hourly workers. Is this polymorphic? Could it
+     * be? Does it belong here?
      *
-     * @return annual wages for hourly workers using the formula
-     * annualWages = hourlyRate * totalHrsForYear
+     * @return annual wages for hourly workers using the formula annualWages =
+     * hourlyRate * totalHrsForYear
      */
     public double getAnnualWages() {
         return hourlyRate * totalHrsForYear;
     }
 
     /**
-     * Returns annual bonus for salaried workers. Is this polymorphic?
-     * Could it be? Does it belong here?
+     * Returns annual bonus for salaried workers. Is this polymorphic? Could it
+     * be? Does it belong here?
      *
      * @return annual bonus or zero if none.
      */
@@ -37,6 +38,7 @@ public class Employee {
 
     /**
      * Is this polymorphic? Should it be? Does it belong here?
+     *
      * @param annualBonus -- think carefully about this
      */
     public void setAnnualBonus(double annualBonus) {
@@ -45,6 +47,7 @@ public class Employee {
 
     /**
      * Is this polymorphic? Should it be? Does it belong here?
+     *
      * @return
      */
     public double getAnnualSalary() {
@@ -53,6 +56,7 @@ public class Employee {
 
     /**
      * Is this polymorphic? Should it be? Does it belong here?
+     *
      * @param annualSalary - think carefully about this
      */
     public void setAnnualSalary(double annualSalary) {
@@ -61,6 +65,7 @@ public class Employee {
 
     /**
      * Is this polymorphic? Should it be? Does it belong here?
+     *
      * @return
      */
     public double getHourlyRate() {
@@ -69,6 +74,7 @@ public class Employee {
 
     /**
      * Is this polymorphic? Should it be? Does it belong here?
+     *
      * @param hourlyRate -- think carefully about this
      */
     public void setHourlyRate(double hourlyRate) {
@@ -77,6 +83,7 @@ public class Employee {
 
     /**
      * Is this polymorphic? Should it be? Does it belong here?
+     *
      * @return
      */
     public double getTotalHrsForYear() {
@@ -85,6 +92,7 @@ public class Employee {
 
     /**
      * Is this polymorphic? Should it be? Does it belong here?
+     *
      * @param totalHrsForYear -- think carefully about this
      */
     public void setTotalHrsForYear(double totalHrsForYear) {
