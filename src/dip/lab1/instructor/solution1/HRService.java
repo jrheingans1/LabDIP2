@@ -1,10 +1,10 @@
 package dip.lab1.instructor.solution1;
 
 /**
- * A high-level class that delegates to a polymorphic employee object to do the 
- * work. Many options are presented to get you thinking. But if you read
- * all the comments you will see that only one method and is all that is
- * really needed here. Other programs may need more.
+ * A high-level class that delegates to a polymorphic employee object to do the
+ * work. Many options are presented to get you thinking. But if you read all the
+ * comments you will see that only one method and is all that is really needed
+ * here. Other programs may need more.
  *
  * @author Jim Lombardo, Instructor
  */
@@ -14,7 +14,7 @@ public class HRService {
     // we could use a method that let's us pass it in. Or, maybe we don't
     // need this at all. Read all the comments below.
 //    private Employee employee;
-    
+
     /*
      * This guarantees that an employee object will be initialized. It's one
      * way to make our code less fragile. But alternatively we could just
@@ -25,7 +25,6 @@ public class HRService {
 //    public HRService(Employee e) {
 //        employee = e;
 //    }
-    
     /*
      * The default constructor initializes nothing. If we're going to use it
      * we'd better make sure that we have an employee object to delegate to.
@@ -33,7 +32,6 @@ public class HRService {
 //    public HRService() {
 //        
 //    }
-    
     /* 
      * If we use the property above we'll need a way to initialize it. One
      * way would be to use a setter method, but that would make our design
@@ -56,7 +54,6 @@ public class HRService {
 //        
 //        employee = e;
 //    }
-    
     /*
      * This is dangerous because it assumes the employee object has already
      * been set. Of course, if we use the parameterized constructor above,
@@ -66,7 +63,6 @@ public class HRService {
 //    public double getAnnualCompensationForEmployee() {
 //        return employee.getAnnualWages();
 //    }
-    
     /*
      * This is the simplest option. Just pass the employee object which
      * is polymorhic with respect to the getAnnualWages method. No need for
@@ -87,17 +83,3 @@ public class HRService {
         return e.getAnnualWages();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -18,8 +18,8 @@ public class Startup {
         //Low-level modules
         Employee emp1 = new HourlyPlusIncentiveEmployee(10.50, 2020);
         Employee emp2 = new SalariedEmployee(45000, 1250);
-        Employee emp3 = new SalariedEmployee(90000,0);
-        
+        Employee emp3 = new SalariedEmployee(90000, 0);
+
         // Create a collection that we can process as a group --
         // demands polymorphic behavior
         Employee[] employees = {emp1, emp2, emp3};
@@ -32,11 +32,11 @@ public class Startup {
 
         // Test input/output by looping over collection in a way that
         // doesn't break if we add/subtract employees from array
-        for(int i=0; i < employees.length; i++) {
-            System.out.println("Employee " + (i+1) + " compensation:" +
-            nf.format(hr.getAnnualCompensationForEmployee(employees[i])));
+        for (int i = 0; i < employees.length; i++) {
+            System.out.println("Employee " + (i + 1) + " compensation:"
+                    + nf.format(hr.getAnnualCompensationForEmployee(employees[i])));
         }
-        
+
         // Or, we could do this...but this is fragile
 //        System.out.println("Employee 1 annual compensation: " +
 //            nf.format(hr.getAnnualCompensationForEmployee(emp1)));
@@ -44,7 +44,6 @@ public class Startup {
 //            nf.format(hr.getAnnualCompensationForEmployee(emp2)));
 //        System.out.println("Employee 3 annual compensation: " +
 //            nf.format(hr.getAnnualCompensationForEmployee(emp3)));
-        
     }
 
 }
