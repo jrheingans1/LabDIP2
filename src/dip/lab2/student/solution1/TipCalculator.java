@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package dip.lab2.student.solution1;
 
 /**
@@ -11,6 +10,7 @@ package dip.lab2.student.solution1;
  * @author James
  */
 public interface TipCalculator {
-    
-    public abstract double getTipAmount();
+
+    public abstract double getTip();
+
 }

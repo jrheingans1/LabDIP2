@@ -10,8 +10,6 @@ package dip.lab2.student.solution1;
  *
  * @author James
  */
-public class PaidService {
-    public double getTipAmountForService(TipCalculator tc){
-        return tc.getTip();
-    }
+public enum ServiceQuality {
+    GOOD, FAIR, POOR
 }
